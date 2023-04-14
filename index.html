@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Yasser Abdel-Maksoud">
+    <meta name="description" content="Free Web to search for movies details">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/main.css">
+    <title>Tailwind Movie Search</title>
+</head>
+
+<body>
+    <div class="flex justify-center items-center h-full">
+        <div class=" m-auto w-1/2 max-md:w-4/5 p-4 rounded shadow bg-background">
+            <div class="flex justify-end cursor-pointer w-8 ml-auto">
+                <a id="theme-icon" onclick="setAppTheme()">
+
+                </a>
+            </div>
+            <div id="search-form" class="form">
+                <h5 class="text-xl font-bold text-textColor py-3">Search Movie Details</h5>
+                <div class="mb-10">
+                    <label for="movie-search" class="mb-4 text-md font-semibold text-textColor">Movie
+                        Name</label>
+                    <input type="text" name="movie-search" id="movie-search"
+                        class="focus:outline-none font-semibold text-md rounded-lg block w-full p-2.5 "
+                        placeholder="Enter movie name here..." required>
+                </div>
+
+                <button onclick="getMovieDetails()" type="submit" id="search-btn"
+                    class="w-full text-textColor bg-secondary hover:bg-blue-800 \
+                focus:ring-4 focus:outline-none focus:ring-blue-300 
+                font-semibold rounded-lg text-md px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Search</button>
+
+                <span id="error-message" class="mt-3 flex items-center justify-center font-bold text-error">
+
+                </span>
+            </div>
+            <div id="result">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="src/js/keys.js"></script>
+    <script src="src/js/app.js"></script>
+
+</body>
+
+</html>

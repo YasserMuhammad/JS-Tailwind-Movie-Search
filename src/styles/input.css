@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&family=Source+Sans+Pro:wght@300;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/background/bg.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+}
+
+@layer base {
+  :root {
+    --color-primary: 98 0 238;
+    --color-secondary: 3 218 198;
+    --color-bg: 86 86 86;
+    --color-error: 176 0 32;
+    --color-text: 15 23 42;
+  }
+
+  :root[class="dark"] {
+    --color-primary: 56 189 248;
+    --color-secondary: 165 180 252;
+    --color-bg: 15 23 42;
+    --color-error: 206 102 121;
+    --color-text: 255 255 255;
+  }
+}
