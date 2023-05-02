@@ -1,4 +1,4 @@
-const apiKey = "a6ed5c87";
+const apiKey = "";
 const inputField = document.getElementById("movie-search");
 const submitBtn = document.getElementById("search-btn");
 const resultDiv = document.getElementById("result");
